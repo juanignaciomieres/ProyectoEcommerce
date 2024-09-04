@@ -1,0 +1,310 @@
+   /* 
+   !important
+   ID= Selector de Padre
+   Class= Selector de contenido
+ */ 
+    
+    
+    * 
+    {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-style: none;
+    text-decoration: none;
+    font-family: solway;
+    }   
+
+    body
+    {
+    max-width: 1920px;
+    background-color: rgb(227, 227, 227);
+    }
+      
+    
+    ul li 
+    {
+    list-style: none; 
+    display: inline-block;
+    }
+    
+    /*ESTILO DE BARRA DE NAVEGACION*/
+    
+    #header
+    {
+    width:100%;
+    height: 70px;
+    }
+
+    #navBar
+    {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        padding: 0 50px;
+        background-color: white;
+        /*ALINEA HORIZONTALMENTE*/
+        justify-content: space-between;
+        /*ALINEA VERTICALMENTE*/
+        align-items: center;
+    }
+    
+    .img_logo
+    {
+        width: 70px;
+        height: 70px;
+    }
+
+    #navBar ul li a {
+        font-size: 20px;
+        color: black;
+        transition: 1s;
+    }
+
+    #navBar ul li a:hover{
+        padding-bottom: 5px;
+        padding-right: 5px;
+        border: 1px solid black;
+        border-radius: 10px;
+        box-shadow: 10px 15px 6px rgba(0, 0, 0, 0.228);
+        transition: 1s;
+    }
+
+    /* MAIN */
+    #main { 
+        margin: 0px;
+        min-height: 100vh;
+    }
+
+    .portadaImg
+    {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 280px;
+    }
+
+    .titulo
+    {
+        display: flex;
+        justify-content:center;   
+        font-size: 15px;
+    }
+    
+
+    #main .OfertasAll a
+    {
+        display: flex; 
+        justify-content:center;
+        font-size: 25px;
+        color: black;
+        align-items: center;
+        padding: 0 100px;
+    }
+
+    .gorra 
+    {
+        width: 200px;
+        height: 200px;
+        margin: 30 auto;
+        justify-content:center;
+        padding: 0 10px;
+        margin-left: 400px;
+    }
+
+    .shirt 
+    {
+        width: 200px;
+        height: 200px;
+        margin: 30 auto;
+        justify-content:center;   
+        padding: 0 10px;
+    }
+
+    .hoddie 
+    {
+        width: 200px;
+        height: 200px;
+        margin: 30 auto;
+        justify-content:center;
+        padding: 0 10px;
+        
+    }
+
+    /*FOOTER*/
+    
+    #footer 
+    {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    align-items: center;
+    padding: 20px 0;
+    }
+
+    .footer_logo img
+    {
+    width: 50px;
+    height: 50px;
+    margin: auto 120px;
+    filter: drop-shadow(10px 5px 2px rgb(156, 156, 156));
+    }
+
+    .footer_links a
+    {
+        display: flex;
+        flex-direction: column;      
+        justify-content: center; 
+        color: black;
+        font-size: 20px;
+        margin: auto 120px;
+    }
+
+
+    .footer_redes a
+    {
+        font-size: 40px;
+        color: black;
+        margin: auto 60px;
+        border: 2px gray;
+        border-radius: 10px;
+        padding: 10px;
+    }
+
+    .footer_redes a
+    {
+        transition: 1.5s;
+    }
+
+    .footer_redes a:hover
+    {
+        filter: drop-shadow(10px 5px 2px rgb(156, 156, 156));
+        transition: 1.5s;
+    }
+
+    /*CONTACTO*/
+
+    .portadaContacto
+    {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 280px;
+    }
+
+    .contacPromo
+    {
+    height: 300px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    }
+
+    #form_contacto 
+    {
+    width: 100%;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 20px 10px;
+    }
+
+    /*SOBRE NOSOTROS*/
+
+    #mainNosotros
+    {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 450px;
+    background-color: grey;
+    }
+    .nosotrosTexto 
+    {
+    margin: 20px 20px;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    }
+
+    .nosotrosMap
+    {
+    display: flex;
+    width: 50%;
+    margin: 20px;
+    }
+
+     /*OFERTAS*/
+     #ofertasImagenes
+     {
+    width: 1024px;
+    height: 100vh;
+    margin: 150px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: 
+    
+               /*COL1  COL2  COL3    COL4*/
+    /*FILA1*/  
+    /*FILA2*/  "campw campgr campbl campgrey"
+    
+    ;
+    column-gap: 50px;
+    row-gap: 20px;
+     }
+
+    #ofertasImagenes img
+     {
+    
+    width: 100%;
+    height: 100%;
+     }
+
+    .img1
+     {
+    grid-area: campw;
+     }
+
+    .img2
+     {
+    grid-area: campgr;
+     }
+
+    .img3
+     {
+    grid-area:campbl;
+     }
+
+    .img4 {
+        grid-area: campgrey
+    }
+    
+    @media screen and (max-width: 1024px) {
+        #imagenes {
+        grid-template-columns: repeat(1fr);
+        grid-template-rows: repeat(4 ,150px);
+        grid-template-areas: 
+        
+                   /*COL1  
+        /*FILA1*/  "campw"
+        /*FILA2*/  "campgr"  
+        /*FILA3*/  "campbl"
+        /*FILA4*/  "campgrey"
+        }
+         
+        }
+        
+        @media screen and (max-width: 480px) {
+        #footer {
+            flex-direction: column;
+            text-align: center;
+        }
+    
+        #footer div {
+            margin-top: 15px;
+        }
+       }
