@@ -65,7 +65,7 @@
         padding-bottom: 5px;
         padding-right: 5px;
         border: 1px solid black;
-        border-radius: 10px;
+        border-radius: 5px;
         box-shadow: 10px 15px 6px rgba(0, 0, 0, 0.228);
         transition: 1s;
     }
@@ -101,6 +101,23 @@
         align-items: center;
         padding: 0 100px;
     }
+
+    .ofertas
+    {
+    display: grid;
+    place-items: center;
+    margin: 20px auto;
+    transition: 1s;
+    }
+
+    .ofertas a:hover{
+        padding-bottom: 5px;
+        padding-right: 5px;
+        border: 1px solid black;
+        border-radius: 5px;
+        box-shadow: 10px 15px 6px rgba(0, 0, 0, 0.228);
+        transition: 1s;
+    }    
 
     .gorra 
     {
