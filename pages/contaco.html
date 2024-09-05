@@ -41,22 +41,17 @@
 
         <hr> <!--LINEA HORIZONTAL-->
 
-        <main> <!--ESTRUCTURA 2 (CONTENIDO)-->
-    
-        <div class="portadaContacto">
-            <img src="../images/portada.jpg" alt="portada">     
-        </div>
-        
+        <main id="main_contacto"> <!--ESTRUCTURA 2 (CONTENIDO)-->
+            
+            <section class="portadaContacto">
+                <img  src="../images/portada.jpg" alt="portada">
+            </section>
+
         <section class="contacPromo">
+           
             <h1>CONTACTO</h1>
             <h2>CON TU PRIMERA SUBCRIPCION OBTENE UN 15% DE DESCUENTO<h2>
-        </section>
-            
-            
-            
                 
-        <section>
-               
         <form id="form_contacto">
                     <label for="nombre">Nombre y apellido:</label>	
                     <input type="text" name="nombre" />
@@ -68,6 +63,7 @@
                         <option value="Femenino">Femenino</option>
                         <option value="Prefiero no decirlo">Prefiero no decirlo</option>
                     </select>
+                    <input id="enviar" type="submit">
         </form>
 
         </section>   
