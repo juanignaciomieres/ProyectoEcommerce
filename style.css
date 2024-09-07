@@ -11,7 +11,7 @@
     margin: 0;
     box-sizing: border-box;
     font-style: none;
-    text-decoration: none;
+    text-decoration: none !important;
     font-family: solway;
     }   
 
@@ -19,6 +19,8 @@
     {
     max-width: 1920px;
     background-color: rgb(227, 227, 227);
+    background-image: url(https://c4.wallpaperflare.com/wallpaper/701/817/190/dark-grunge-texture-wallpaper-preview.jpg);
+    background-size: cover;
     }
       
     
@@ -32,8 +34,8 @@
     
     #header
     {
-        width:100%;
-        height: 70px;
+    width:100%;
+    height: 70px;
     }
 
     #navBar
@@ -42,40 +44,43 @@
         height: 100%;
         display: flex;
         padding: 0 50px;
-        background-color: white;
+        background-color: rgb(249, 249, 249);
         /*ALINEA HORIZONTALMENTE*/
         justify-content: space-between;
         /*ALINEA VERTICALMENTE*/
         align-items: center;
     }
     
-    .img_logo
+    .navbar-brand
     {
-        width: 90px;
-        height: 90px;
-        padding: 10px;
+    margin: 20px 10px;
+    width: 60px;
+    height: 60px;
     }
 
     #navBar ul li a {
-        font-size: 20px;
+        font-size: 18px;
         color: black;
+        align-items: center;
+        justify-content: space-between;
         transition: .5s;
     }
 
     #navBar ul li a:hover{
-        
+        align-items: center;
+        justify-content: space-between;
         padding-bottom: 3px;
         padding-right: 3px;
         border: 1px solid black;
-        border-radius: 10px;
+        border-radius: 15px;
         box-shadow: 10px 5px 3px rgba(0, 0, 0, 0.228);
         transition: .5s;
     }
 
     #navBar ul li:nth-child(1) a:hover {
-        background-color: black;
+        background-color: rgba(0, 0, 0, 0.83);
         color: white;
-        border-radius: 10px;
+        border-radius: 15px;
         transition: .5s;
     }
 
@@ -85,28 +90,32 @@
         min-height: 100vh;
     }
 
-    .portadaImg
-    {
-        display: flex;
-        justify-content: center;
-        width: 100%;
-        height: 280px;
-    }
-
-    .titulo
-    {
-        display: flex;
-        justify-content:center;   
-        font-size: 15px;
+    .alert {
+    padding-left: 350px;
+    color: rgba(255, 255, 255, 0.875);
+    background-color: rgba(0, 0, 0, 0.938);
     }
     
+
+    .carousel-inner img
+    {
+    width: 100%;
+    height: 250px;
+    }
+    
+    .carousel-inner h5 p
+    {
+    text-align: end;
+    }
+    
+
 
     #main .OfertasAll a
     {
         display: flex; 
         justify-content:center;
-        font-size: 25px;
         color: black;
+        font-size: 25px;     
         align-items: center;
         padding: 0 100px;
     }
@@ -116,7 +125,7 @@
     display: grid;
     place-items: center;
     margin: 20px auto;
-    transition: 1s;
+    transition: .5s;
     }
 
     .ofertas a:hover{
@@ -318,8 +327,22 @@
     }
 
      /*OFERTAS*/
-     #ofertasImagenes
-     {
+    
+    #main--Of{
+    min-height: 100vh;
+    height: 1000px;
+    }
+    
+    .alert
+    {
+    background-color: rgba(92, 92, 92, 0.2) !important;
+    padding-left: 500px;
+    margin: 20px 10px;
+    height: 50px;
+    }
+    
+    #ofertasImagenes
+    {
     width: 1024px;
     height: 100vh;
     margin: 150px;
@@ -329,8 +352,8 @@
     grid-template-areas: 
     
                /*COL1  COL2  COL3    COL4*/
-    /*FILA1*/  
-    /*FILA2*/  "campw campgr campbl campgrey"
+    /*FILA1*/  "campw campgr campbl campgrey"
+    /*FILA2*/  
     
     ;
     column-gap: 50px;
@@ -341,21 +364,10 @@
     {
     border: 0.5px solid rgba(0, 0, 0, 0.528);
     width: 100%;
-    height: 100%;
-    transition: 1s;
+    height: 300px;
     }
 
-    #ofertasImagenes img a:hover
-    {
-    padding-bottom: 10px;
-    padding-right: 10px;
-    border: 1px solid rgba(0, 0, 0, 0.396);
-    border-radius: 5px;
-    box-shadow: 10px 15px 6px rgba(0, 0, 0, 0.228);
-    transition: 1s;
-    }
-
-    .img1
+    .img1 
      {
     grid-area: campw;
      }
@@ -371,8 +383,25 @@
      }
 
     .img4 {
-        grid-area: campgrey
+    grid-area: campgrey;
     }
+
+    #ofertasImagenes div button{
+    background-color: rgba(0, 0, 0, 0.431) !important;
+    color: white !important;
+    font-size: 15px !important;
+    border-radius: 10px !important;
+    transition: .5s !important;
+    }
+
+    #ofertasImagenes div button:hover {
+    transition: .5s !important;
+    border-radius: 15px !important;
+    background-color: black !important;
+    color: white !important;
+    }
+
+
     
     @media screen and (max-width: 1024px) {
         #imagenes {
@@ -391,11 +420,30 @@
         
         @media screen and (max-width: 480px) {
         #footer {
-            flex-direction: column;
-            text-align: center;
+        flex-direction: column;
+        text-align: center;
         }
     
         #footer div {
-            margin-top: 15px;
+        margin-top: 15px;
         }
        }
+       
+       /*PRODUCTOS*/
+       #body--productos{
+        background-image: url(https://c4.wallpaperflare.com/wallpaper/701/817/190/dark-grunge-texture-wallpaper-preview.jpg);
+        background-size: cover;
+       }
+
+       .navbar {
+        width: 100%;
+        height: 200px;
+       }
+
+       .navbar-brand img {
+        width: 50px !important;
+        height: 50px !important;
+       }
+
+       
+
