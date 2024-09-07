@@ -18,9 +18,7 @@
     body
     {
     max-width: 1920px;
-    background-color: rgb(227, 227, 227);
-    background-image: url(https://c4.wallpaperflare.com/wallpaper/701/817/190/dark-grunge-texture-wallpaper-preview.jpg);
-    background-size: cover;
+    background-color: white;
     }
       
     
@@ -44,18 +42,18 @@
         height: 100%;
         display: flex;
         padding: 0 50px;
-        background-color: rgb(249, 249, 249);
+        background-color: rgb(206, 206, 206);
         /*ALINEA HORIZONTALMENTE*/
         justify-content: space-between;
         /*ALINEA VERTICALMENTE*/
         align-items: center;
     }
     
-    .navbar-brand
+    .navbar-brand img
     {
     margin: 20px 10px;
-    width: 60px;
-    height: 60px;
+    width: 100px;
+    height: 100px;
     }
 
     #navBar ul li a {
@@ -71,16 +69,16 @@
         justify-content: space-between;
         padding-bottom: 3px;
         padding-right: 3px;
-        border: 1px solid black;
         border-radius: 15px;
         box-shadow: 10px 5px 3px rgba(0, 0, 0, 0.228);
         transition: .5s;
     }
 
     #navBar ul li:nth-child(1) a:hover {
-        background-color: rgba(0, 0, 0, 0.83);
-        color: white;
-        border-radius: 15px;
+        background-color: rgba(0, 0, 0, 0.442);
+        color: rgba(255, 255, 255, 0.82);
+        text-align: center;
+        border-radius: 5px;
         transition: .5s;
     }
 
@@ -92,89 +90,85 @@
 
     .alert {
     padding-left: 350px;
-    color: rgba(255, 255, 255, 0.875);
+    color: rgba(0, 0, 0, 0.662);
     background-color: rgba(0, 0, 0, 0.938);
     }
     
 
+    /*Primer Portada*/
     .carousel-inner img
     {
     width: 100%;
     height: 250px;
     }
     
-    .carousel-inner h5 p
+    .carousel-caption h5
     {
-    text-align: end;
+    background-color: rgba(0, 0, 0, 0.571);
+    color: white;
     }
-    
 
+    .carousel-caption p
+    {
+    background-color: rgba(0, 0, 0, 0.571);
+    color: rgba(255, 255, 255, 0.598);
+    }
 
     #main .OfertasAll a
     {
         display: flex; 
-        justify-content:center;
+        justify-content: center;
+        align-items: center;
         color: black;
         font-size: 25px;     
-        align-items: center;
         padding: 0 100px;
+        transition: .5s;
     }
 
-    .ofertas
-    {
-    display: grid;
-    place-items: center;
-    margin: 20px auto;
-    transition: .5s;
-    }
-
-    .ofertas a:hover{
-        color: rgb(255, 255, 255);
-        background-color: rgba(0, 0, 0, 0.328);
-        font-size: 10px;
+    .OfertasAll a:hover{
+        background-color: rgba(0, 0, 0, 0.048);
         padding-bottom: 5px;
         padding-right: 5px;
-        border-radius: 15px;
+        border-radius: 25px;
         box-shadow: 10px 15px 6px rgba(0, 0, 0, 0.228);
         transition: .5s;
-    }    
+    }  
 
-    .gorra 
+    .ofertas-inicio
     {
-        width: 200px;
-        height: 200px;
-        margin: 30 auto;
-        justify-content:center;
-        padding: 0 10px;
-        margin-left: 400px;
+    text-align: center;
+    place-items: center;
+    margin: 20px auto;;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 10px;
     }
 
-    .shirt 
+    .ofertas-inicio img 
     {
-        width: 200px;
-        height: 200px;
-        margin: 30 auto;
-        justify-content:center;   
-        padding: 0 10px;
+    width: 250px;
+    height: 250px;
     }
 
-    .hoddie 
+    .ofertas-inicio a
     {
-        width: 200px;
-        height: 200px;
-        margin: 30 auto;
-        justify-content:center;
-        padding: 0 10px;
+    color: black;
+    font-size: 20px;
+    }
+
+    .ofertas-inicio a:hover
+    {
+    color: rgb(115, 115, 115);
+    }
         
-    }
-
     /*FOOTER*/
     
     #footer 
     {
     display: flex;
     justify-content: center;
-    background-color: white;
+    background-color: rgb(206, 206, 206);
     align-items: center;
     padding: 20px 0;
     }
@@ -192,48 +186,45 @@
         display: flex;
         flex-direction: column;      
         justify-content: center; 
-        color: black;
+        color: rgb(92, 92, 92);
         font-size: 20px;
         margin: auto 120px;
-        transition: 1s;
+        transition: .5s;
     }
 
     .footer_links a:hover
     {
-    background-color: rgba(0, 0, 0, 0.395);
-    color: white;
-    border-radius: 15px;
-    font-size: 20px;
-    transition: 1s;
+    color: rgb(0, 0, 0);
+    transition: .5s;
     }
 
 
     .footer_redes a
     {
-        font-size: 40px;
+        font-size: 30px;
         color: black;
-        margin: auto 60px;
+        margin: auto 30px;
         border: 2px gray;
         border-radius: 10px;
-        padding: 10px;
+        padding: 5px;
     }
 
     .footer_redes a
     {
-        transition: 1.5s;
+    transition: .5s;
     }
 
     .footer_redes a:hover
     {
-        filter: drop-shadow(10px 5px 2px rgb(156, 156, 156));
-        transition: 1.5s;
+    filter: drop-shadow(10px 5px 2px rgb(156, 156, 156));
+    transition: .5s;
     }
 
     /*CONTACTO*/
     #main_contacto
     {
-    color: white;  
-    background-color: rgba(0, 0, 0, 0.762);
+    color: black;  
+    background-color: rgb(202, 202, 202);
     }
     
     
@@ -428,21 +419,55 @@
         margin-top: 15px;
         }
        }
-       
        /*PRODUCTOS*/
-       #body--productos{
-        background-image: url(https://c4.wallpaperflare.com/wallpaper/701/817/190/dark-grunge-texture-wallpaper-preview.jpg);
-        background-size: cover;
-       }
 
        .navbar {
         width: 100%;
-        height: 200px;
+        height: 150px;
+        
        }
 
        .navbar-brand img {
-        width: 50px !important;
-        height: 50px !important;
+        width: 60px !important;
+        height: 60px !important;
+       }
+
+       .navbar-brand p {
+        display: inline;
+        font-size: 30px;
+        align-items: center;
+       }
+
+       .caterogorias-Text{
+        font-size: 20px;
+        margin-top: 10px;
+        margin-left: 10px;
+       }
+       
+       .categorias a {
+        width: 100%;
+        margin: 0 auto;
+        font-size: 20px;
+        color: black;
+        display: inline;
+      
+       }
+       .categorias img
+       {
+        width: 200px !important;
+        height: 200px !important;
+        display: inline !important;
+        align-items: center !important;
+        justify-content: space-between !important;
+        margin: 20px 0px;
+        border: 1px solid black;
+        margin-left: 150px;
+       }
+
+       .card-group
+
+       {
+        margin: 20px 10px;
        }
 
        

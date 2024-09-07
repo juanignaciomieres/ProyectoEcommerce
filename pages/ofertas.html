@@ -26,20 +26,21 @@
     <body> <!--ESTRUCTURA SEMANTICA-->
         
         
-        <header id="header"> <!--ESTRUCTURA 1 (CABECERA E INICIO)-->
-           
-            <nav id="navBar">  
-                
-                <img class="img_logo" src="../images/logo.png" alt="logo">
-                
-                <ul>
-                    <li><a href="../index.html">INICIO</a></li>
-                    <li><a href="../pages/productos.html">INDUMENTARIA</a></li>
-                    <li><a href="../pages/contaco.html">CONTACTO</a></li>
-                </ul>
-            
+        <header> 
+        
+            <nav class="navbar" style="background-color: rgb(202, 202, 202);">
+                    
+                <div class="container-fluid">
+                      
+                    <a href="../index.html" class="navbar-brand"> <img src="../images/logo.png" alt="logo"> <p>Ofertas</p></a>
+                   
+                    <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="" aria-label="Search">
+                    <button class="btn btn-secondary btn-lg" type="submit">Buscar</button>
+                    </form>
+               
+                </div>
             </nav>
-
         </header>
     
         <main id="main--Of"> 
@@ -47,16 +48,6 @@
             <div class="alert alert-secondary" role="alert">
                 <strong>SOLO POR HOY! 2X1 EN CAMPERAS</strong>
             </div>
-
-            <nav class="navbar bg-body-white">
-                <div class="container-fluid">
-                  <a class="navbar-brand"> <strong>Ofertas</strong></a>
-                  <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="" aria-label="Search">
-                    <button class="btn btn-secondary btn-lg" type="submit">Buscar</button>
-                  </form>
-                </div>
-            </nav>
 
         <section id="ofertasImagenes">
             
@@ -95,7 +86,7 @@
         <footer id="footer">
 
             <div class="footer_logo">
-
+        
                 <img src="../images/logo.png" alt="logopie">
                 
             </div>
@@ -103,7 +94,7 @@
             <div class="footer_links">
                     
                     <ul>
-                        <li><a href="pages/sobrenosotros.html">SOBRE NOSOTROS</a></li>
+                        <li><a href="../pages/sobrenosotros.html">Nosotros</a></li>
                     </ul>
             </div>
         
@@ -112,11 +103,12 @@
                     <a href="https://www.instagram.com/"><i class="fa-brands fa-square-instagram"></i></a>
                     <a href="https://www.whatsapp.com/?lang=es_LA"><i class="fa-brands fa-whatsapp"></i></a>
                 </div>
+        
+        </footer>
+        
+        <!-- SCRIPT BOOSTRAP -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
- </footer>
-
-<!-- SCRIPT BOOSTRAP -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 
 </html>
