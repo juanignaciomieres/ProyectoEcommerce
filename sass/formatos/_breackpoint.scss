@@ -1,0 +1,27 @@
+@media screen and (max-width: 1024px) {
+    #imagenes {
+    grid-template-columns: repeat(1fr);
+    grid-template-rows: repeat(4 ,150px);
+    grid-template-areas: 
+    
+               /*COL1  
+    /*FILA1*/  "campw"
+    /*FILA2*/  "campgr"  
+    /*FILA3*/  "campbl"
+    /*FILA4*/  "campgrey"
+    }
+     
+    }
+    
+    @media screen and (max-width: 480px) {
+    #footer {
+    flex-direction: column;
+    text-align: center;
+    }
+
+    #footer div {
+    margin-top: 15px;
+    }
+   }
+
+   

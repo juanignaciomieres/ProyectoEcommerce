@@ -1,0 +1,71 @@
+ /*CONTACTO*/
+ #main_contacto
+ {
+ color: black;  
+ background-color: rgb(202, 202, 202);
+ }
+ 
+ 
+ .portadaContacto
+ {
+ display: flex;
+ justify-content: center;
+ height: 280px;
+ width: 100%;
+ }
+
+ .contacPromo
+ {
+ height: 300px;
+ width: 100%;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-around;
+ align-items: center;
+ }
+ 
+ .contacPromo h1{
+ border: 2px solid rgb(177, 177, 177);
+ background-color: rgba(0, 0, 0, 0);
+ width: auto;
+ height: auto;
+ padding: 10px;
+ border-radius: 10px;
+ transition: .5s;
+ }
+ 
+ .contacPromo h1:hover
+ {
+     filter: drop-shadow(10px 5px 2px rgb(156, 156, 156));
+     background-color: white;
+ color: black;
+ transition: .5s;
+ }
+
+ #form_contacto 
+ {
+ width: 100%;
+ font-size: 20px;
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ margin: 20px 10px;
+ }
+
+ #enviar
+ {
+ background-color: rgb(255, 255, 255);
+ padding: 10px;
+ border-radius: 10px;
+ margin-left: 10px;
+ font-family: Arial, Helvetica, sans-serif;
+ transition: 1s;
+ }
+
+ #enviar:hover
+ {
+ color: white;
+ background-color: black;
+ transition: 1s;
+ font-size: 15px;
+ }

@@ -1,0 +1,76 @@
+  /*OFERTAS*/
+ 
+  #main--Of{
+    min-height: 100vh;
+    height: 1000px;
+    }
+    
+    .alert
+    {
+    background-color: rgba(92, 92, 92, 0.2) !important;
+    padding-left: 500px;
+    margin: 20px 10px;
+    height: 50px;
+    }
+    
+    #ofertasImagenes
+    {
+    width: 1024px;
+    height: 100vh;
+    margin: 150px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: 
+    
+               /*COL1  COL2  COL3    COL4*/
+    /*FILA1*/  "campw campgr campbl campgrey"
+    /*FILA2*/  
+    
+    ;
+    column-gap: 50px;
+    row-gap: 20px;
+    }
+   
+    #ofertasImagenes img
+    {
+    border: 0.5px solid rgba(0, 0, 0, 0.528);
+    width: 100%;
+    height: 300px;
+    }
+   
+    .img1 
+     {
+    grid-area: campw;
+     }
+   
+    .img2
+     {
+    grid-area: campgr;
+     }
+   
+    .img3
+     {
+    grid-area:campbl;
+     }
+   
+    .img4 {
+    grid-area: campgrey;
+    }
+   
+    #ofertasImagenes div button{
+    background-color: rgba(0, 0, 0, 0.431) !important;
+    color: white !important;
+    font-size: 15px !important;
+    border-radius: 10px !important;
+    transition: .5s !important;
+    }
+   
+    #ofertasImagenes div button:hover {
+    transition: .5s !important;
+    border-radius: 15px !important;
+    background-color: black !important;
+    color: white !important;
+    }
+   
+   
