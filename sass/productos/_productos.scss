@@ -2,7 +2,7 @@
 
 .navbar { 
     width: 100%;
-    height: 150px;}
+    height: 90px !important;}
     
     .navbar-brand img {
     width: 60px !important;
@@ -12,20 +12,17 @@
     display: inline;
     font-size: 30px;
     align-items: center;}
-    
-    .caterogorias-Text{
-    font-size: 20px;
-    margin-top: 10px;
-    margin-left: 10px}
-    
-    .categorias a {
-    width: 100%;
-    margin: 0 auto;
-    font-size: 20px;
-    color: black;
-    display: inline;}
-    
-    .categorias img
+  
+  #categorias {
+    .caterogorias-Text {
+      text-align: center;
+      .categorias a {
+        width: 100%;
+        margin: 0 auto;
+        font-size: 20px;
+        color: $blue;
+        display: inline;
+        .categorias img
         {
          width: 200px !important;
          height: 200px !important;
@@ -35,14 +32,9 @@
          margin: 20px 0px;
          border: 1px solid black;
          margin-left: 150px;
-        }
+        } } }
+  }
     
-        .card-group
-    
-        {
-         margin: 20px 10px;
-        }
-    
-        
-    
+.card-group {
+margin: 20px 10px;}
     
